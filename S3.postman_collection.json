@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "fc21a548-997c-440c-be5d-70ddb89e42ae",
+		"name": "S3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "javaSpringFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/temp/profile.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/storage/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"storage",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "javaSpringFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/storage/file/profile.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"storage",
+						"file",
+						"profile.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "phpLaravelFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/file/LX31SJHhDGLREoGnkd1Wcx495Uyh64GopjXVz2zp.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"file",
+						"LX31SJHhDGLREoGnkd1Wcx495Uyh64GopjXVz2zp.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "phpLaravelFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/temp/profile.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
