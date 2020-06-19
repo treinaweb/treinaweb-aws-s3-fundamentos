@@ -1,4 +1,4 @@
-# TreinaWeb: curso ["AWS - S3 - Fundamentos"](https://www.treinaweb.com.br/painel/cursos/amazon-web-services-aws-simple-storage-service-s3-fundamentos)
+# TreinaWeb: curso ["AWS - S3 - Fundamentos"](https://www.treinaweb.com.br/curso/amazon-web-services-aws-simple-storage-service-s3-fundamentos)
 
 Esse repositório contém trechos de scripts e arquivos de configuração utilizados durante o curso de AWS - S3 - Fundamentos.
 
