@@ -12,4 +12,4 @@ aws s3 cp . s3://tw-bucket-public/uploads --recursive
 aws s3 cp s3://tw-bucket-public s3://tw-bucket-private --recursive
 
 # Sync a local folder to a S3 prefix
-aws s3 sync . s3://tw-bucket-public/uploads --acl public-read --remove
+aws s3 sync . s3://tw-bucket-public/uploads --acl public-read --delete
